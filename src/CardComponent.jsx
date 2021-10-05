@@ -6,7 +6,11 @@ import {
   CardContent,
   Button,
   Typography,
+  CardHeader,
+  Avatar
 } from "@material-ui/core";
+import {red} from 'material-ui-colors'
+import Profile from "./Profile";
 
 const bull = (
   <Box
@@ -20,6 +24,7 @@ const bull = (
 const card = (
   <React.Fragment>
     <CardContent>
+   <Profile />
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         Word of the Day
       </Typography>
@@ -45,6 +50,7 @@ const CardComponent = () => {
   return (
     <Box sx={{ minWidth: 275 }}>
       <Card variant="outlined">{card}</Card>
+      
     </Box>
   );
 };
